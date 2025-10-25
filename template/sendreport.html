@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/sendreports.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send report | Ota Health AI</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <h2>Ota Health Ai</h2>
+        </div>
+    </nav>
+
+    <div class="choose_action">
+        <h2>Choose Ai  Action</h2>
+        <div>
+            <button id="malaria_btn">Malaria</button>
+            <button id="diabetes_btn">Diabetes</button>
+        </div>
+    </div>
+
+    <section class="sending_malaria" id="sending_malaria">
+        
+        <h2>Send Malaria Report</h2>
+        <form action="" id="malaria_form">
+            <div class="inputs-container">
+
+                <div>
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" placeholder="Enter age" required>
+                    </div>
+
+                    <div>
+                        <label for="body_temperature">Body Temperature</label>
+                        <input type="number" name="body_temperature" id="body_temperature" placeholder="Enter body temperature" required>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="hemoglobin">Hemoglobin</label>
+                        <input type="number" name="hemoglobin" id="hemoglobin" placeholder="Enter hemoglobin" required>
+                    </div>
+
+                    <div>
+                        <label for="rbc_count">RBC Count</label>
+                        <input type="number" name="rbc_count" id="rbc_count" placeholder="Enter body temperature" required>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="platelet_count">Platelet Count</label>
+                        <input type="number" name="platelet_count" id="platelet_count" placeholder="Enter Platelet count" required>
+                    </div>
+
+                    <div class="all_bool">
+                        <div>
+                            <label for="has_fever">Has Fever</label>
+                            <input type="checkbox" name="has_fever" id="has_fever">
+                        </div>
+
+                        <div>
+                            <label for="has_chills">Has Chills</label>
+                            <input type="checkbox" name="has_chills" id="has_chills">
+                        </div>
+
+                        <div>
+                            <label for="has_vomitting">Has Vomitting</label>
+                            <input type="checkbox" name="has_vomitting" id="has_vomitting">
+                        </div>
+
+                        <div>
+                            <label for="rainy_season">Rainy Season</label>
+                            <input type="checkbox" name="rainy_season" id="rainy_season">
+                        </div>
+                    </div>
+
+                </div>
+                
+                <button>Send Report</button>
+            </div>
+
+        </form>
+    </section>
+
+    <section class="sending_diabetes" id="sending_diabetes">
+        
+        <h2>Send Diabetes Report</h2>
+        <form action="" id="diabetes_form">
+            <div class="inputs-container">
+
+                <div>
+                    <div>
+                        <label for="pregnancies">Pregnancies</label>
+                        <input type="number" name="pregnancies" id="pregnancies" placeholder="Enter age" required>
+                    </div>
+
+                    <div>
+                        <label for="glucose">Glucose</label>
+                        <input type="number" name="glucose" id="glucose" placeholder="Enter body temperature" required>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="bloodPressure">BloodPressure</label>
+                        <input type="number" name="bloodPressure" id="bloodPressure" placeholder="Enter hemoglobin" required>
+                    </div>
+
+                    <div>
+                        <label for="skinThickness">SkinThickness</label>
+                        <input type="number" name="skinThickness" id="skinThickness" placeholder="Enter body temperature" required>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="insulin">Insulin</label>
+                        <input type="number" name="insulin" id="insulin" placeholder="Enter Platelet count" required>
+                    </div>
+
+                    <div>
+                        <label for="bmi">BMI</label>
+                        <input type="number" name="bmi" id="bmi" placeholder="Enter Platelet count" required>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="diabetesPedigreeFunction">DiabetesPedigreeFunction</label>
+                        <input type="number" name="diabetesPedigreeFunction" id="diabetesPedigreeFunction" placeholder="Enter Platelet count" required>
+                    </div>
+
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" placeholder="Enter Platelet count" required>
+                    </div>
+                </div>
+                
+                <button>Send Report</button>
+            </div>
+
+        </form>
+    </section>
+
+    <script src="../utils/sendreport.js"></script>
+</body>
+</html>

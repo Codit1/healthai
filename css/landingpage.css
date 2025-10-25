@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #f5f5f5; */
+    background-image: url("../Assets/bg3.jpg");
+    /* background-image: url("../Assets/v904-nunny-012.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-color: #C5C5C5; */
+}
+
+nav{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #C5C5C5; */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav div button:nth-child(1){
+    background-color: #286FB2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+nav div button:nth-child(2){
+    background-color: #E5F2F8;
+    color: #286FB2;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+nav div h2{
+    color: #286FB2;
+}
+
+section{
+    padding: 120px 30px 20px 30px;
+}
+
+section h1{
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid #286FB2;
+    font-size: 14px;
+    margin: auto;
+    border-radius: 30px;
+    /* color: #286FB2; */
+}
+
+section h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+section h3{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    background: linear-gradient(90deg, #2593C4, #286FB2, #4ecdc4);
+    background-clip: text;
+    -webkit-background-clip: text; /* ✅ needed for Chrome, Safari */
+    -webkit-text-fill-color: transparent; /* ✅ makes gradient visible */
+    font-weight: 700;
+}
+
+section form div{
+    margin-top: 30px;
+}
+
+section form input{
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #286FB2;
+}
+
+section form div button{
+    margin: auto;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #286FB2;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+section form button:hover{
+    background-color: #1b4c7b;
+}
+
+footer div img{
+    width: 100%;
+}
+
+footer div h2{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px){
+    section form div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    section form input{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px){
+    section form div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    section form input{
+        width: 250px;
+    }
+
+    nav div button:nth-child(1){
+        padding: 12px 40px;
+    }
+
+    nav div button:nth-child(2){
+        padding: 12px 50px;
+    }
+}
+
+
