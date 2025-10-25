@@ -30,6 +30,10 @@ signUpForm.addEventListener("submit", (e) => {
     .then(res => res.json())
     .then(data => {
         console.log(data)
+
+        alert("User created successfully and Logged in")
+
+        window.location.href = "/template/sendreport.html"
     })
     .catch(err => {
         console.log(err)
