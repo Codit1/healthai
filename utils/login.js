@@ -16,19 +16,27 @@ loginForm.addEventListener("submit", (e) => {
 
     console.log(user)
 
-    fetch("https://health-result-project.onrender.com/login", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(user)
-    })
-    .then(res => res.json())
-    .then(data => {
-        console.log(data)
-    })
-    .catch(err => {
-        console.log(err)
-    })
+    if( email !== "" && password !== ""){
+        fetch("https://health-result-project.onrender.com/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(user)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+
+            alert(data.message)
+
+            setTimeout( () => {
+                window.location.href = "/template/sendreport.html"
+            }, 2000)
+        })
+        .catch(err => {
+            console.log(err)
+        })
+    }
     
 })

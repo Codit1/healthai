@@ -57,15 +57,15 @@ malariaForm.addEventListener("submit", (e) => {
     const rainySeason = document.getElementById("rainy_season").checked;
 
     const reportData = {
-      age,
-      bodyTemperature,
-      hemoglobin,
-      rbcCount,
-      plateletCount,
-      hasFever,
-      hasChills,
-      hasVomitting,
-      rainySeason,
+      Age: age,
+      Body_Temperature: bodyTemperature,
+      Hemoglobin: hemoglobin,
+      RBC_Count: rbcCount,
+      Platelet_Count: plateletCount,
+      Has_Fever: hasFever,
+      Has_Chills: hasChills,
+      Has_Vomiting: hasVomitting,
+      Rainy_Season: rainySeason
     };
 
     console.log(reportData);
@@ -81,8 +81,11 @@ malariaForm.addEventListener("submit", (e) => {
     })
     .then((response) => response.json())
     .then((data) => {
-        // Handle the server response
-        console.log(data);
+      // Handle the server response
+      console.log(data);
+
+      alert(`Results: ${data.Result} \n ${data.confidence}`)
+
     })
     .catch( err => {
         console.log(err)
@@ -102,14 +105,14 @@ diabetesForm.addEventListener("submit", (event) => {
     const age = document.getElementById("age").value;
 
     const reportData = {
-        pregnancies,
-        glucose,
-        bloodPressure,
-        skinThickness,
-        insulin,
-        bmi,
-        diabetesPedigreeFunction,
-        age,
+      Pregnancies: pregnancies,
+      Glucose: glucose,
+      BloodPressure: bloodPressure,
+      SkinThickness: skinThickness,
+      Insulin: insulin,
+      BMI: bmi,
+      DiabetesPedigreeFunction: diabetesPedigreeFunction,
+      Age: age
     };
 
     // Send the report data to the server
@@ -123,8 +126,10 @@ diabetesForm.addEventListener("submit", (event) => {
     })
     .then((response) => response.json())
     .then((data) => {
-        // Handle the server response
-        console.log(data);
+      // Handle the server response
+      console.log(data);
+
+      alert(`Outcome: ${data.Outcome}`)
     })
     .catch( err => {
         console.log(err)

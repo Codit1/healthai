@@ -30,13 +30,13 @@
         <p class="head">
         </p>
         
-        <form action="">
+        <form id="login_form">
             <div>
-                <input type="email" placeholder="Enter your email">
-                <input type="password" placeholder="Enter your password">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <input type="password" id="password" placeholder="Enter your password" required>
             </div>
             <div>
-                <button>Get Started</button>
+                <button id="login_btn">Get Started</button>
             </div>
         </form>
     </section>
@@ -50,5 +50,7 @@
             <h2>Thank You <span>Dr. TITI</span></h2>
         </div>
     </footer>
+
+    <script src="../utils/login.js"></script>
 </body>
 </html>

@@ -46,6 +46,27 @@ nav div button:nth-child(2){
 nav div h2{
     color: #286FB2;
 }
+
+.results{
+    margin: 10px 0 0 20px;
+}
+
+.results ul li{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #E5F2F8;
+
+}
+
+.results ul li span{
+    color: #286FB2;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
 .choose_action{
     margin-top: 10px;
 }
